@@ -2,5 +2,4 @@ select
  id as customer_id,
  orderid,
 amount
-from
-RAW.STRIPE.PAYMENT
+from {{ source('stripe', 'payment') }}

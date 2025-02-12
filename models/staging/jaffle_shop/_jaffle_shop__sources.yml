@@ -2,8 +2,11 @@ version: 2
 
 sources:
   - name: jaffle_shop
+    description: jaffle shop is the model and db we have
     database: raw
     schema: jaffle_shop
     tables:
       - name: customers
-      - name: orders
+        description: raw data of customers
+      - name: orders  
+        description: "{{ doc('order_status') }}"
